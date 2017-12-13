@@ -47,7 +47,7 @@ class Category_Wise_Search_Widget extends WP_Widget
 	<div><label class="screen-reader-text" for="s">' . __('Search for:') . '</label> 
 	<input type="hidden" name="cat" id="cat" value="' . $category_id . '" /> 
 	<input type="text" class="fullwidth" value="' . get_search_query() . '" name="s" id="s" />
-	<input type="submit" id="searchsubmit" value="' . esc_attr__('Search') . '" />
+	<input type="submit" class="fullwidth margin-content" id="searchsubmit" value="' . esc_attr__('Search') . '" />
 	</div>
 	</form>';
             echo apply_filters('get_search_form', $form);
